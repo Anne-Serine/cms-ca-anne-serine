@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Rainy Days | Checkout</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Montserrat:ital,wght@0,400;0,700;0,800;1,700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Hotjar Tracking Code for https://teal-taiyaki-8b6fe7.netlify.app/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3655485,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="content-box">
+      <a href="/index.html" class="logo">
+        <img
+          src="/images/resized/logo_RainyDays.png"
+          class="logo_image"
+          alt="Rainy Days logo"
+        />
+      </a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon mobile-icons"
+        ><img src="/icons/hamburger-icon.svg" alt="hamburger-menu icon"
+      /></label>
+      <img
+        src="/icons/search-light.svg"
+        class="mobile-icons"
+        alt="search light icon"
+      />
+      <nav>
+        <ul>
+          <li><a href="/category/jackets-all.html">Jackets</a></li>
+          <li><a href="/category/jackets-for-women.html">Women</a></li>
+          <li><a href="/category/jackets-for-men.html">Men</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li class="nav-about"><a href="/about.html">About</a></li>
+          <li class="nav-favorites"><a href="#">Favorites</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" class="search-input" aria-label="search-input" />
+        <img src="/icons/search-light.svg" alt="search light icon" />
+      </div>
+      <div class="header-icons">
+        <img
+          src="/icons/login-icon.svg"
+          class="green-icon"
+          alt="login icon"
+        />
+        <img
+          src="/icons/heart-icon.svg"
+          class="heart-icon"
+          alt="Heart icon for favorites"
+        />
+        <a href="/shoppingCart.html" class="cart"
+          ><img src="/icons/cart-icon.svg" class="green-icon" alt="cart icon"
+        /><span id="cartItemCounter">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="content-box checkout-wrapper">
+      <h1>Checkout</h1>
+    </div>
+  </section>
+  <section>
+    <div class="content-box checkout-wrapper">
+      <form>
+        <div class="fieldset-background">
+          <fieldset>
+            <legend>Customer information</legend>
+            <p>Already registered? <a href="#">Log in</a></p>
+            <div class="checkout-input">
+              <div>
+                <label for="first-name" >First name</label>
+                <input type="text" name="first-name" id="first-name">
+              </div>
+              <div>
+                <label for="last-name" >Last name</label>
+                <input type="text" name="last-name" id="last-name">
+              </div>
+              <div class="input-long">
+                <label for="street-address" >Street address</label>
+                <input type="text" name="street-address" id="street-address">
+              </div>
+              <div>
+                <label for="zip-code" >Zip code</label>
+                <input type="text" name="zip-code" id="zip-code">
+              </div>
+              <div>
+                <label for="city" >City</label>
+                <input type="text" name="city" id="city">
+              </div>
+              <div class="input-long">
+                <label for="email" >Your e-mail address</label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="input-long">
+                <label for="mobile" >Mobile</label>
+                <input type="tel" name="mobile" id="mobile">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="fieldset-background">
+          <fieldset>
+            <legend>Want to add C/O address?</legend>
+            <button type="button" class="secondary" id="coAddressButton">Add C/O address</button>
+            <div class="checkout-input dn" id="coAddressInputFields">
+              <div>
+                <label for="first-name" >First name</label>
+                <input type="text" name="first-name" id="first-name">
+              </div>
+              <div>
+                <label for="last-name" >Last name</label>
+                <input type="text" name="last-name" id="last-name">
+              </div>
+              <div class="input-long">
+                <label for="street-address" >Street address</label>
+                <input type="text" name="street-address" id="street-address">
+              </div>
+              <div>
+                <label for="zip-code" >Zip code</label>
+                <input type="text" name="zip-code" id="zip-code">
+              </div>
+              <div>
+                <label for="city" >City</label>
+                <input type="text" name="city" id="city">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="fieldset-background">
+          <fieldset>
+            <legend>Shipping method</legend>
+            <div class="summary-layout">
+              <div>
+                <input type="radio" value="normal-delivery" name="Shipping method" id="normal-delivery" checked>
+                <label for="normal-delivery">Normal delivery</label>
+              </div>
+              <div class="align-right">
+                <p class="price">5 $</p>
+              </div>
+            </div>
+            <div class="summary-layout"> 
+              <div>
+                <input type="radio" value="express-delivery" name="Shipping method" id="express-delivery">
+                <label for="express-delivery">Express delivery</label>
+              </div>
+              <div class="align-right">
+                <p class="price">10 $</p>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="fieldset-background">
+          <fieldset>
+            <legend>Payment method</legend>
+            <div class="summary-layout">
+              <div>
+                <input type="radio" value="visa-mastercard" name="Payment method" id="visa-mastercard" checked>
+                <label for="visa-mastercard">VISA / Mastercard</label>
+              </div>
+              <div class="align-right">
+                <img src="/icons/visa.svg" alt="visa card icon">
+                <img src="/icons/mastercard.svg" alt="mastercard icon">
+              </div>
+            </div>
+            <div class="summary-layout"> 
+              <div>
+                <input type="radio" value="klarna" name="Payment method" id="klarna">
+                <label for="klarna">Klarna invoice</label>
+              </div>
+              <div class="align-right">
+                <img src="/icons/klarna.svg" alt="klarna icon">
+              </div>
+            </div>
+            <div class="summary-layout"> 
+              <div>
+                <input type="radio" value="paypal" name="Payment method" id="paypal">
+                <label for="paypal">PayPal</label>
+              </div>
+              <div class="align-right">
+                <img src="/icons/paypal.svg" alt="PayPal icon">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        
+      </form>
+
+      <div class="sticky">
+        <ul class="checkout-summary" id="cartContainer"></ul>
+        <div class="checkout-summary cart-total-container" id="checkoutSummaryTotal"></div>
+        <a href="/checkout-success.html" class="button checkout-button">Complete order</a>
+      </div>
+
+     
+  </section>
+
+  <footer>
+    <div class="content-box footer-content">
+      <div>
+        <p>COMPANY</p>
+        <ul>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+        <ul class="footer-address">
+          <li>Rainy Days AS</li>
+          <li>Strandgata 215</li>
+          <li>5518 Haugesund</li>
+          <li>Norway</li>
+          <li>+47 12345678</li>
+        </ul>
+      </div>
+      <div>
+        <p>SHOPPING GUIDES</p>
+        <ul>
+          <li>FAQs</li>
+          <li>Size guide</li>
+          <li>Payment options</li>
+          <li>Gift card</li>
+          <li>Privacy policy</li>
+          <li>Terms and conditions</li>
+        </ul>
+      </div>
+      <div>
+        <p>DELIVERY</p>
+        <ul>
+          <li>Shipping and handling</li>
+          <li>Waranty and returns</li>
+          <li>Track your order</li>
+        </ul>
+      </div>
+      <div>
+        <p>JOIN OUR NEWSLETTER!</p>
+        <div class="footer-div flex-input">
+          <input type="email" class="newsletter" aria-label="newsletter" />
+          <button class="secondary">Sign up</button>
+        </div>
+        <div class="footer-div payment-icons">
+          <img src="/icons/visa.svg" class="visa" alt="visa card icon" />
+          <img
+            src="/icons/mastercard.svg"
+            class="mastercard"
+            alt="mastercard icon"
+          />
+          <img src="/icons/klarna.svg" class="klarna" alt="klarna icon" />
+          <img src="/icons/paypal.svg" class="paypal" alt="PayPal icon" />
+        </div>
+      </div>
+    </div>
+    <div class="bottom-line">
+      <div class="content-box">
+        <div class="bottom-icons">
+          <img src="/icons/facebook-mono.svg" alt="Facebook icon" />
+          <img src="/icons/instagram-mono.svg" alt="instagram icon" />
+          <img src="/icons/youtube.svg" alt="YouTube icon" />
+        </div>
+        <a class="map-pin" href="/contact.html"
+          ><img src="/icons/map-pin-light.svg" alt="map-pin icon"
+        /></a>
+        <p class="copyright">Copyright &copy; 2023 Rainy Days AS of Norway</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/index.js" type="module"></script>
+  <script src="js/shoppingCart.js" type="module"></script>
+</body>
+</html>

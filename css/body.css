@@ -1,0 +1,355 @@
+.welcome {
+  background-image: url(/images/home-background.jpg);
+  min-height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.shop-welcome {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  gap: 30px;
+  align-self: flex-start;
+}
+
+.shop-welcome h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.for-him_image,
+.for-her_image {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px #ababab;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.for-him_image:hover,
+.for-her_image:hover {
+  transform: scale(1.02);
+}
+
+.homepage-teasers {
+  flex: 1 1 20rem;
+  position: relative;
+}
+
+.signup_background {
+  background-image: url(/images/blue-mountains.jpg);
+  min-height: 637px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+}
+
+.signup-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.signup-content h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.hero-heading {
+  max-width: 300px;
+  gap: 20px;
+  display: grid;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.hero-heading h1 {
+  font-size: 3rem;
+}
+
+
+
+/* cart */
+
+
+.cart-display-box {
+  justify-content: space-between;
+}
+
+.cart-items-display {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cart-title-display {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.cart-price-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
+  flex-wrap: wrap;
+}
+
+.cart-total-container {
+  justify-content: end;
+  text-align: end;
+
+}
+
+.cart-total-container span {
+  font-weight: 700;
+}
+
+
+
+/* about */
+
+.about_image {
+  background-image: url(/images/resized/about-picture.jpg);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 35%;
+}
+
+.about-text {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px #ababab;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-text h1,
+.about-text h2 {
+  text-align: center;
+  line-height: 1;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+}
+
+.about-list {
+  list-style: square;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 20px;
+}  
+
+.about-logo {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* contact */
+
+.contact_image {
+  background-image: url(/images/resized/contact-us.jpg);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 50%;
+}
+
+.some-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  max-width: max-content;
+}
+
+
+/* Jackets for men and women */
+
+.men_image,
+.women_image {
+  background-color: #000000;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 35%;
+  position: relative;
+}
+
+.men_image {
+  background-image: url(/images/resized/men-new.jpg);
+  background-position-y: 40%;
+}
+
+.women_image {
+  background-image: url(/images/resized/women-new.jpg);
+}
+
+.women_image::before,
+.men_image::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.40;
+}
+
+
+/* Our jackets */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 20px;
+  width: 100%;
+  flex: 1 1 44rem;
+}
+
+.category-box {
+  background-color: #000000;
+  min-height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-box::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.5;
+}
+
+.category-box > * {
+  display: flex;
+  z-index: 1;
+}
+
+.exploring_image {
+  background-image: url(/images/resized/exploring.jpg);
+}
+
+.camping_image {
+  background-image: url(/images/resized/camping.jpg);
+}
+
+.hiking_image {
+  background-image: url(/images/resized/hiking.jpg);
+}
+
+.skiing_image {
+  background-image: url(/images/resized/skiing.jpg);
+}
+
+.category-box:hover {
+  transform: scale(1.02);
+}
+
+
+
+/* checkout-success */
+
+.checkout-success {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px #ababab;
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 80px 20px;
+  margin: 50px auto;
+}
+
+.checkout-success > * {
+  margin: 10px 0px;
+}
+
+
+@media screen and (min-width: 650px) {
+  
+  .women_image::before,
+  .men_image::before {
+    opacity: 0.35;
+  }
+  
+  .hero-heading {
+    max-width: 450px;
+    margin-right: 40px;
+  } 
+  
+  .hero-heading h1 {
+    font-size: 4rem;
+  }
+  
+}
+
+@media screen and (min-width: 960px) {
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    flex: 0 1 auto;
+    gap: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1250px) {
+
+  .shop-welcome {
+    align-self: unset;
+  }
+
+  .hero-container {
+    max-width: 700px;
+  }
+
+  .hero-category-heading {
+    margin: auto;
+    max-width: 350px;
+  }
+
+}
+ 
+
+  

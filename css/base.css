@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #F4F4F4;
+  line-height: 1.4;
+  color: #222222;
+}
+
+a {
+  color: #18768D;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.summary-layout h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-calligraffitti span {
+  font-family: "Calligraffitti"; 
+  font-size: 2rem;
+  display: block;
+}
+
+.teaser-text {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  font-size: 2rem;
+  line-height: 1;
+  color: #222222;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+img {
+  min-width: 25px;
+  max-width: 100%;
+}
+
+.price {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+  .detail-price {
+    font-size: 2rem;
+  }
+ 
+}

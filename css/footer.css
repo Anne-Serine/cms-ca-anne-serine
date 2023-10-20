@@ -1,0 +1,103 @@
+footer {
+  background-color: #8FBBC6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer .content-box {
+  align-items: flex-start;
+}
+
+footer .content-box.footer-content > div {
+  flex: 1 0 17rem;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #093A46;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+footer .copyright {
+  color: #000000;
+  text-transform: none;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  padding-right: 5.5rem;
+}
+
+.bottom-line {
+  background-color: #E3EBED;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-content: space-between;
+}
+
+.bottom-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.map-pin {
+  display: flex;
+}
+
+.footer-address {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#newsletter {
+  position: relative;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.footer-div {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer a {
+  color: #222222;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.flex-input {
+  display: flex;
+  gap: 1px;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+  #newsletter {
+    display: flex;
+  } 
+
+  .map-pin {
+    order: 3;
+  }
+  
+}
+

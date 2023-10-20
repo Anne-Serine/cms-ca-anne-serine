@@ -1,0 +1,208 @@
+header {
+  background-color: #E4EBED;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  order: 2;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.logo_image {
+  max-width: 96px;
+}
+
+nav {
+  z-index: 10;
+  order: 3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+nav,
+.heart-icon,
+.search {
+  display: none;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav a {
+  font-size: 1.2rem;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase; 
+  display: block;
+  color: #ffffff;
+}
+
+nav li,
+  nav .nav-about,
+  nav .nav-favorites {
+    display: block;
+    border: 1px solid #E3EBED;
+    border-radius: 3px;
+    background-color: #18778D;
+  }
+
+.search {
+  position: relative;
+  display: none;
+  align-items: center;
+  order: 4;
+}
+
+.search img {
+  position: absolute;
+  min-width: 16px;
+  right: 10px;
+}
+
+.search .search-input {
+  padding-right: 40px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: red;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+  order: 5;
+}
+
+.header-icons img {
+  max-height: 25px;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+.mobile-icons {
+  display: flex;
+  order: 1;
+}
+
+
+@media only screen and (min-width: 370px) {
+  .logo_image {
+    max-width: 120px;
+  }
+
+}
+
+
+@media only screen and (min-width: 769px) {
+
+  .mobile-icons {
+    display: none;
+  }
+
+  .logo {
+    flex: unset;
+  }
+
+  .logo_image {
+    max-width: 195px;
+  }
+
+  nav {
+    display: block;
+    position: relative;
+    top: unset;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav .nav-about,
+  nav .nav-favorites {
+    display: none;
+  }
+
+  nav li,
+  nav .nav-about,
+  nav .nav-favorites {
+    border: none;
+    border-radius: unset;
+    background-color: unset;
+  }
+
+  nav a {
+    color: #222222;
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+  }
+
+  nav a:hover {
+    color: #D06901;
+    text-decoration: none;
+  }
+
+  .search,
+  .heart-icon {
+    display: flex;
+  }
+
+  .search {
+    flex: 1 1 20rem;
+  }
+
+  .green-icon:hover {
+    filter: invert(36%) sepia(86%) saturate(454%) hue-rotate(144deg) brightness(89%) contrast(88%);
+  }
+  
+  .heart-icon:hover {
+    filter: invert(45%) sepia(15%) saturate(1447%) hue-rotate(304deg) brightness(96%) contrast(82%);
+  }
+
+}
+
+
+@media only screen and (min-width: 1046px) {
+  
+  .search {
+    max-width: 11rem;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .search {
+    max-width: 20rem;
+  }
+
+}
+
