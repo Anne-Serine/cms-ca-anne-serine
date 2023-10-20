@@ -124,7 +124,7 @@ if (cartContainer) {
                                 <div class="cart-price-display">
                                   <p>${productData[i].price_html}</p>
                                   <p>${quantity}</p>
-                                  <p class="each-product-total"><span>${(Number(productData[i].prices.price) / 100 * quantity).toLocaleString()} $</span></p>
+                                  <p class="each-product-total"><span>$ ${(Number(productData[i].prices.price) / 100 * quantity).toLocaleString()}</span></p>
                                 </div>
                                 </li>`   
                                                          
@@ -141,7 +141,7 @@ if (cartContainer) {
   //                                     </div>`
 
   totalContainer.innerHTML += `<p>
-                                Total: <span> ${total.toLocaleString()} $
+                                Total: <span>$ ${total.toLocaleString()}
                                 </span></p>`
                               
   
