@@ -166,12 +166,23 @@
   width: 13px;
 }
 
+.colorfilter {
+  display: flex;
+  align-items: center;
+}
 
 .filter .box {
-  height: 13px;
-  width: 13px;
-  margin-right: 20px;
+  margin-right: 1rem;
+  border: 1px solid lightgrey;
+  transition: all 0.2s ease-in-out;
 }
+
+.filter .box:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  border: 2px solid green;
+}
+
 
 aside ul {
   flex: auto;
