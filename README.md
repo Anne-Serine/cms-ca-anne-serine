@@ -1,6 +1,8 @@
 # Rainy-Days
 
-![rainy-days](https://github.com/Anne-Serine/cms-ca-anne-serine/assets/125912893/9dda7685-5496-4504-b121-36d6592782cd)
+
+<img width="1708" alt="Skjermbilde 2023-12-01 kl  00 26 56" src="https://github.com/Anne-Serine/cms-ca-anne-serine/assets/125912893/9c7884dd-5324-46fc-a99f-3e7ec3a2816d">
+
 
 
 Rainy Days is a userfriendly e-commerce website offering rain jackets for men and women aged 30-50 whose interests are: being outdoors, hiking, exploring, skiing, camping, canoeing. 
